@@ -65,15 +65,6 @@
 
         <!-- Всегда оставляйте коммент ниже, чтобы удобно было копипастить -->
         <section>
-          <h2>Название компонента или группы компонентов</h2>
-
-          <p>Класс компонента \ модификаторы</p>
-          <p style="color: red;">При необходимости, подсказки \ предупреждение \ важная информация</p>
-          <div>Компонент</div>
-        </section>
-
-        <!-- Всегда оставляйте коммент ниже, чтобы удобно было копипастить -->
-        <section>
           <h2>Логотип</h2>
           <p>logo</p>
           @@include("source/html/components/logo.html")
@@ -95,8 +86,35 @@
 
         <!-- Всегда оставляйте коммент ниже, чтобы удобно было копипастить -->
         <section>
+          <h2>Пункт меню пользователя</h2>
+          <p>site-item</p>
+          <div style="display: flex; justify-content: space-between; max-width: 200px; flex-wrap: wrap;">
+            @@include('source/html/components/site-item.html', {
+              context: {
+                icon: '',
+                textContent: ''
+              }
+            })
+            @@include('source/html/components/site-item.html', {
+              context: {
+                icon: 'heart',
+                textContent: 'Избранное'
+              }
+            })
+            @@include('source/html/components/site-item.html', {
+              context: {
+                icon: 'buy',
+                textContent: 'Корзина'
+              }
+            })
+          </div>
+        </section>
+
+        <!-- Всегда оставляйте коммент ниже, чтобы удобно было копипастить -->
+        <section>
           <h2>Иконки</h2>
-          <div style="display: flex;">
+          <p>icon</p>
+          <div">
             @@include('source/html/components/icon.html')
             @@include('source/html/components/icon.html', {
               context: {
@@ -109,6 +127,13 @@
               }
             })
           </div>
+        </section>
+
+        <!-- Всегда оставляйте коммент ниже, чтобы удобно было копипастить -->
+        <section>
+          <h2></h2>
+          <p>accordion</p>
+          <!-- @@include('source/html/components/.html') -->
         </section>
 
         <!-- Всегда оставляйте коммент ниже, чтобы удобно было копипастить -->

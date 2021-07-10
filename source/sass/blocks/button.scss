@@ -7,6 +7,8 @@
 
   background-color: #0349eb;
   outline: none;
+  cursor: pointer;
+  transition: background-color $default-transition-settings;
 
   &:hover {
     background-color: darken(#0349eb, 15%);

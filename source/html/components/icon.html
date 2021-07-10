@@ -1,17 +1,17 @@
 @@if (!context.name) {
-  <div class="icon">
-    @@include('source/img/sprite/profile.svg')
-  </div>
+  <svg class="icon" width="16" height="20">
+    <use xlink:href="#profile"></use>
+  </svg>
 }
 
 @@if (context.name == 'heart') {
-  <div class="icon icon--heart">
-    @@include('source/img/sprite/heart.svg')
-  </div>
+  <svg class="icon icon--heart" width="20" height="19">
+    <use xlink:href="#heart"></use>
+  </svg>
 }
 
 @@if (context.name == 'buy') {
-  <div class="icon icon--buy">
-    @@include('source/img/sprite/buy.svg')
-  </div>
+  <svg class="icon icon--buy" width="20" height="20">
+    <use xlink:href="#buy"></use>
+  </svg>
 }

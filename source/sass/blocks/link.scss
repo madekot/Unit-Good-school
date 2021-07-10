@@ -1,0 +1,16 @@
+.link {
+  outline: none;
+  transition: color $default-transition-settings;
+
+  &:hover {
+    color: darken(#0349eb, 15%);
+  }
+
+  &:focus {
+    color: darken(#0349eb, 15%);
+  }
+
+  &:active {
+    color: rgba(#0349eb, 0.7);
+  }
+}

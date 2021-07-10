@@ -1183,8 +1183,8 @@ body {
   height: 100%;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 14px;
+  line-height: 17px;
   font-family: "", "Arial", sans-serif;
   color: #000000;
   background-color: #ffffff;
@@ -1553,6 +1553,10 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-transition: -webkit-box-shadow 0.3s ease;
+  transition: -webkit-box-shadow 0.3s ease;
+  transition: box-shadow 0.3s ease;
+  transition: box-shadow 0.3s ease, -webkit-box-shadow 0.3s ease;
 }
 
 .input-field input {
@@ -1620,6 +1624,9 @@ button,
   color: #ffffff;
   background-color: #0349eb;
   outline: none;
+  cursor: pointer;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
 }
 
 .button:hover {
@@ -1647,24 +1654,61 @@ button,
 }
 
 .icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.icon svg {
   width: 16px;
   height: 20px;
 }
 
-.icon--heart svg {
+.icon--heart {
   width: 20px;
   height: 19px;
 }
 
-.icon--buy svg {
+.icon--buy {
   width: 20px;
   height: 20px;
+}
+
+.site-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 44px;
+  font-size: 12px;
+  line-height: 14.63px;
+}
+
+.site-item .icon {
+  margin-bottom: auto;
+}
+
+.site-item__text {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.link {
+  outline: none;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+.link:hover {
+  color: #02329f;
+}
+
+.link:focus {
+  color: #02329f;
+}
+
+.link:active {
+  color: rgba(3, 73, 235, 0.7);
 }
 
 /* @media (hover: hover), screen and (min-width: 0\0) {
