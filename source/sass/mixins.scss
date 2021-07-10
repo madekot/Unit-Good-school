@@ -55,3 +55,29 @@
     @content;
   }
 } */
+
+@mixin input-reset {
+  border: none;
+  background-image: none;
+  background-color: transparent;
+  box-shadow: none;
+  outline: none;
+}
+
+@mixin button-reset {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+
+  background: transparent;
+}
+
+@mixin visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  clip: rect(0 0 0 0);
+}

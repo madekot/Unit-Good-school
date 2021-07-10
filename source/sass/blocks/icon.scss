@@ -1,0 +1,18 @@
+.icon {
+  display: flex;
+
+  svg {
+    width: 16px;
+    height: 20px;
+  }
+
+  &--heart svg {
+    width: 20px;
+    height: 19px;
+  }
+
+  &--buy svg {
+    width: 20px;
+    height: 20px;
+  }
+}

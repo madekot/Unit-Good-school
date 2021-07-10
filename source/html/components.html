@@ -63,6 +63,7 @@
         </a>
         <h1>Компоненты, используемые в вёрстке</h1>
 
+        <!-- Всегда оставляйте коммент ниже, чтобы удобно было копипастить -->
         <section>
           <h2>Название компонента или группы компонентов</h2>
 
@@ -75,8 +76,38 @@
         <section>
           <h2>Логотип</h2>
           <p>logo</p>
-          <div>
-            @@include("source/html/components/logo.html")
+          @@include("source/html/components/logo.html")
+        </section>
+
+        <!-- Всегда оставляйте коммент ниже, чтобы удобно было копипастить -->
+        <section>
+          <h2>поле инпута</h2>
+          <p>input</p>
+          @@include("source/html/components/input-field.html")
+        </section>
+
+        <!-- Всегда оставляйте коммент ниже, чтобы удобно было копипастить -->
+        <section>
+          <h2>форма</h2>
+          <p>form</p>
+          @@include('source/html/components/form.html')
+        </section>
+
+        <!-- Всегда оставляйте коммент ниже, чтобы удобно было копипастить -->
+        <section>
+          <h2>Иконки</h2>
+          <div style="display: flex;">
+            @@include('source/html/components/icon.html')
+            @@include('source/html/components/icon.html', {
+              context: {
+                name: 'heart'
+              }
+            })
+            @@include('source/html/components/icon.html', {
+              context: {
+                name: 'buy'
+              }
+            })
           </div>
         </section>
 

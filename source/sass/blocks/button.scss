@@ -1,0 +1,22 @@
+.button {
+  @include button-reset;
+
+  padding: 10px 24px;
+
+  color: #ffffff;
+
+  background-color: #0349eb;
+  outline: none;
+
+  &:hover {
+    background-color: darken(#0349eb, 15%);
+  }
+
+  &:focus {
+    background-color: darken(#0349eb, 15%);
+  }
+
+  &:active {
+    background-color: rgba(#0349eb, 0.7);
+  }
+}
