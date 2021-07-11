@@ -2,12 +2,14 @@
   outline: none;
   transition: color $default-transition-settings;
 
-  &:hover {
-    color: darken(#0349eb, 15%);
-  }
+  @include non-touch {
+    &:hover {
+      color: darken(#0349eb, 15%);
+    }
 
-  &:focus {
-    color: darken(#0349eb, 15%);
+    &:focus {
+      color: darken(#0349eb, 15%);
+    }
   }
 
   &:active {

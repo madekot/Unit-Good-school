@@ -1,0 +1,19 @@
+<article class="product-category-card">
+  <a href="#" class="product-category-card__link link">
+    <div class="product-category-card__wrap-image">
+      @@include('source/html/components/picture.html', {
+        context: {
+          width: '255',
+          height: '173',
+          dir: '../img/content/',
+          webp: 'product-category-card__image-1.webp',
+          webp2x: 'product-category-card__image-1@2x.webp',
+          image: 'product-category-card__image-1.jpg',
+          image2x: 'product-category-card__image-1@2x.jpg',
+          alt: ''
+        }
+      })
+    </div>
+    <h2 class="product-category-card__title">@@if(!context.textContent){Смартфоны}@@if(context.textContent){@@context.textContent}</h2>
+  </a>
+</article>

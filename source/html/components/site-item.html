@@ -1,9 +1,11 @@
-<a class="site-item link" href="#">
-  @@include('source/html/components/icon.html', {
-    context: {
-      name: '@@context.icon'
-    }
-  })
-  <p class="site-item__text">@@if(!context.textContent){Вход}@@if(context.textContent){@@context.textContent}</p>
-</a>
+<div class="site-item">
+  <a class="link" href="#">
+    @@include('source/html/components/icon.html', {
+      context: {
+        name: '@@context.icon'
+      }
+    })
+    <p class="site-item__text">@@if(!context.textContent){Вход}@@if(context.textContent){@@context.textContent}</p>
+  </a>
+</div>
 

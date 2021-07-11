@@ -81,3 +81,10 @@
   margin: -1px;
   clip: rect(0 0 0 0);
 }
+
+// Добавляет стили наведения только на устройства без сенсорного экрана
+@mixin non-touch {
+  @media (hover: hover) {
+    @content;
+  }
+}

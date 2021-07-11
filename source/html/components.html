@@ -43,6 +43,14 @@
     .container > section {
       padding: 20px 0;
     }
+
+    .row {
+      display: flex;
+    }
+
+    .row > * {
+      margin-right: 20px;
+    }
   </style>
 
 </head>
@@ -88,7 +96,7 @@
         <section>
           <h2>Пункт меню пользователя</h2>
           <p>site-item</p>
-          <div style="display: flex; justify-content: space-between; max-width: 200px; flex-wrap: wrap;">
+          <div class="row">
             @@include('source/html/components/site-item.html', {
               context: {
                 icon: '',
@@ -114,7 +122,7 @@
         <section>
           <h2>Иконки</h2>
           <p>icon</p>
-          <div">
+          <div class="row">
             @@include('source/html/components/icon.html')
             @@include('source/html/components/icon.html', {
               context: {
@@ -131,9 +139,11 @@
 
         <!-- Всегда оставляйте коммент ниже, чтобы удобно было копипастить -->
         <section>
-          <h2></h2>
-          <p>accordion</p>
-          <!-- @@include('source/html/components/.html') -->
+          <h2>Карточка категории продукта</h2>
+          <p>product-category-card</p>
+          <div class="row">
+            @@include('source/html/components/product-category-card.html')
+          </div>
         </section>
 
         <!-- Всегда оставляйте коммент ниже, чтобы удобно было копипастить -->

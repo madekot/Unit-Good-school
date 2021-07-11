@@ -57,6 +57,14 @@
     .container>section {
       padding: 20px 0;
     }
+
+    .row {
+      display: flex;
+    }
+
+    .row>* {
+      margin-right: 20px;
+    }
   </style>
 </head>
 
@@ -163,32 +171,38 @@
         <section>
           <h2>Пункт меню пользователя</h2>
           <p>site-item</p>
-          <div style="display: flex; justify-content: space-between; max-width: 200px; flex-wrap: wrap;">
-            <a class="site-item link" href="#">
-              <svg class="icon" width="16" height="20">
-                <use xlink:href="#profile"></use>
-              </svg>
-              <p class="site-item__text">Вход</p>
-            </a>
-            <a class="site-item link" href="#">
-              <svg class="icon icon--heart" width="20" height="19">
-                <use xlink:href="#heart"></use>
-              </svg>
-              <p class="site-item__text">Избранное</p>
-            </a>
-            <a class="site-item link" href="#">
-              <svg class="icon icon--buy" width="20" height="20">
-                <use xlink:href="#buy"></use>
-              </svg>
-              <p class="site-item__text">Корзина</p>
-            </a>
+          <div class="row">
+            <div class="site-item">
+              <a class="link" href="#">
+                <svg class="icon" width="16" height="20">
+                  <use xlink:href="#profile"></use>
+                </svg>
+                <p class="site-item__text">Вход</p>
+              </a>
+            </div>
+            <div class="site-item">
+              <a class="link" href="#">
+                <svg class="icon icon--heart" width="20" height="19">
+                  <use xlink:href="#heart"></use>
+                </svg>
+                <p class="site-item__text">Избранное</p>
+              </a>
+            </div>
+            <div class="site-item">
+              <a class="link" href="#">
+                <svg class="icon icon--buy" width="20" height="20">
+                  <use xlink:href="#buy"></use>
+                </svg>
+                <p class="site-item__text">Корзина</p>
+              </a>
+            </div>
           </div>
         </section>
         <!-- Всегда оставляйте коммент ниже, чтобы удобно было копипастить -->
         <section>
           <h2>Иконки</h2>
           <p>icon</p>
-          <div">
+          <div class="row">
             <svg class="icon" width="16" height="20">
               <use xlink:href="#profile"></use>
             </svg>
@@ -198,22 +212,35 @@
             <svg class="icon icon--buy" width="20" height="20">
               <use xlink:href="#buy"></use>
             </svg>
-      </div>
-      </section>
-      <!-- Всегда оставляйте коммент ниже, чтобы удобно было копипастить -->
-      <section>
-        <h2></h2>
-        <p>accordion</p>
-      </section>
-      <!-- Всегда оставляйте коммент ниже, чтобы удобно было копипастить -->
-      <!-- <section>
+          </div>
+        </section>
+        <!-- Всегда оставляйте коммент ниже, чтобы удобно было копипастить -->
+        <section>
+          <h2>Карточка категории продукта</h2>
+          <p>product-category-card</p>
+          <div class="row">
+            <article class="product-category-card">
+              <a href="#" class="product-category-card__link link">
+                <div class="product-category-card__wrap-image">
+                  <picture>
+                    <source srcset="../img/content/product-category-card__image-1.webp 1x, ../img/content/product-category-card__image-1@2x.webp 2x" type="image/webp">
+                    <img src="../img/content/product-category-card__image-1.jpg" srcset="../img/content/product-category-card__image-1.jpg, ../img/content/product-category-card__image-1@2x.jpg 2x" alt="" width="255" height="173">
+                  </picture>
+                </div>
+                <h2 class="product-category-card__title">Смартфоны</h2>
+              </a>
+            </article>
+          </div>
+        </section>
+        <!-- Всегда оставляйте коммент ниже, чтобы удобно было копипастить -->
+        <!-- <section>
           <h2></h2>
 
           <p></p>
         </section> -->
-  </div>
-  </main>
-  <footer class="footer"></footer>
+      </div>
+    </main>
+    <footer class="footer"></footer>
   </div>
   <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>
