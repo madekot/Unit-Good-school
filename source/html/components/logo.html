@@ -1,4 +1,9 @@
-<div class="logo">
-  @@include("source/img/svg/logo.svg")
-</div>
+@@include("source/img/svg/logo.svg", {
+  context: {
+    size: {
+      width: '@@context.width',
+      height: '@@context.height'
+    }
+  }
+})
 

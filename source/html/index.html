@@ -34,6 +34,11 @@
       margin-bottom: 40px;
     }
 
+    .container .logo {
+      width: 300px;
+      height: auto;
+    }
+
     @media (max-width: 768px) {
       ol {
         padding-left: 20px;
@@ -55,7 +60,13 @@
 
   <main>
     <div class="container">
-      <img src="https://via.placeholder.com/300x150" width="300" alt="Логотип проекта">
+      @@include("source/html/components/logo.html", {
+        context: {
+          width: '300',
+          height: 'auto'
+        }
+      })
+      <!-- <img src="https://via.placeholder.com/300x150" width="300" alt="Логотип проекта"> -->
       <h1>Список страниц и компонентов</h1>
       <ol>
         <li>

@@ -5,12 +5,12 @@
         context: {
           width: '255',
           height: '173',
-          dir: '../img/content/',
-          webp: 'product-category-card__image-1.webp',
-          webp2x: 'product-category-card__image-1@2x.webp',
-          image: 'product-category-card__image-1.jpg',
-          image2x: 'product-category-card__image-1@2x.jpg',
-          alt: ''
+          dir: '@@context.image.dir',
+          webp: '@@context.image.webp',
+          webp2x: '@@context.image.webp2x',
+          image: '@@context.image.image',
+          image2x: '@@context.image.image2x',
+          alt: '@@context.image.alt'
         }
       })
     </div>

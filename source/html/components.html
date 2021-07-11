@@ -75,7 +75,12 @@
         <section>
           <h2>Логотип</h2>
           <p>logo</p>
-          @@include("source/html/components/logo.html")
+          @@include("source/html/components/logo.html", {
+            context: {
+              width: '',
+              height: ''
+            }
+          })
         </section>
 
         <!-- Всегда оставляйте коммент ниже, чтобы удобно было копипастить -->
@@ -139,10 +144,52 @@
 
         <!-- Всегда оставляйте коммент ниже, чтобы удобно было копипастить -->
         <section>
+          <h2>picture</h2>
+          <p></p>
+          @@include('source/html/components/picture.html', {
+            context: {
+              width: '255',
+              height: '173',
+              dir: '../img/content/',
+              webp: 'product-category-card__image-1.webp',
+              webp2x: 'product-category-card__image-1@2x.webp',
+              image: 'product-category-card__image-1.jpg',
+              image2x: 'product-category-card__image-1@2x.jpg',
+              alt: 'Ноутбук планшет'
+            }
+          })
+        </section>
+
+        <!-- Всегда оставляйте коммент ниже, чтобы удобно было копипастить -->
+        <section>
           <h2>Карточка категории продукта</h2>
           <p>product-category-card</p>
           <div class="row">
-            @@include('source/html/components/product-category-card.html')
+            @@include('source/html/components/product-category-card.html', {
+              context: {
+                image: {
+                  dir: '../img/content/',
+                  webp: 'product-category-card__image-1.webp',
+                  webp2x: 'product-category-card__image-1@2x.webp',
+                  image: 'product-category-card__image-1.jpg',
+                  image2x: 'product-category-card__image-1@2x.jpg',
+                  alt: 'Белый iphone'
+                }
+              }
+            })
+            @@include('source/html/components/product-category-card.html', {
+              context: {
+                image: {
+                  dir: '../img/content/',
+                  webp: 'product-category-card__image-2.webp',
+                  webp2x: 'product-category-card__image-2@2x.webp',
+                  image: 'product-category-card__image-2.jpg',
+                  image2x: 'product-category-card__image-2@2x.jpg',
+                  alt: 'планшет черный'
+                },
+                textContent: 'Планшеты',
+              }
+            })
           </div>
         </section>
 
