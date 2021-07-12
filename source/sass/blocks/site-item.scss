@@ -11,6 +11,10 @@
     align-items: center;
   }
 
+  & .link:active {
+    color: rgba(#0349eb, 0.7);
+  }
+
   & .icon {
     margin-bottom: auto;
   }
