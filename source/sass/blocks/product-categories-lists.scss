@@ -27,28 +27,10 @@
   border-bottom: none;
 }
 
-.product-categories-item {
-  padding-bottom: 5px;
-}
-
-.product-categories-item__list-item + .product-categories-item__list-item {
-  margin-top: 10px;
-}
-
-.product-categories-item__link {
-  display: inline-block;
-  margin-top: 15px;
-  margin-left: 20px;
-}
-
 .product-categories-lists .product-categories-item {
-  margin-top: 15px;
+  padding-bottom: 5px;
 }
 
 .product-categories-lists__wrap + .product-categories-lists__wrap {
   margin-top: 20px;
-}
-
-.product-categories-item .list {
-  margin-left: 20px;
 }
