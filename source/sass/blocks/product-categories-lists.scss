@@ -27,6 +27,10 @@
   border-bottom: none;
 }
 
+.product-categories-item {
+  padding-bottom: 5px;
+}
+
 .product-categories-item__list-item + .product-categories-item__list-item {
   margin-top: 10px;
 }
@@ -42,7 +46,7 @@
 }
 
 .product-categories-lists__wrap + .product-categories-lists__wrap {
-  margin-top: 25px;
+  margin-top: 20px;
 }
 
 .product-categories-item .list {
