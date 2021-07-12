@@ -1,6 +1,7 @@
 .link {
   outline: none;
   transition: color $default-transition-settings;
+  color: #000c22;
 
   @include non-touch {
     &:hover {
@@ -14,5 +15,9 @@
 
   &:active {
     color: rgba(#0349eb, 0.7);
+  }
+
+  &--color {
+    color: #0349eb;
   }
 }
