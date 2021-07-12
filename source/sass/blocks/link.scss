@@ -20,4 +20,14 @@
   &--color {
     color: #0349eb;
   }
+
+  @include non-touch {
+    &--color:hover {
+      color: #000c22;
+    }
+
+    &--color:focus {
+      color: #000c22;
+    }
+  }
 }

@@ -34,6 +34,7 @@
 .product-categories-item__link {
   display: inline-block;
   margin-top: 15px;
+  margin-left: 20px;
 }
 
 .product-categories-lists .product-categories-item {
@@ -42,4 +43,8 @@
 
 .product-categories-lists__wrap + .product-categories-lists__wrap {
   margin-top: 25px;
+}
+
+.product-categories-item .list {
+  margin-left: 20px;
 }
