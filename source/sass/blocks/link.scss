@@ -5,11 +5,11 @@
 
   @include non-touch {
     &:hover {
-      color: darken(#0349eb, 15%);
+      color: #0349eb;
     }
 
     &:focus {
-      color: darken(#0349eb, 15%);
+      color: #0349eb;
     }
   }
 
