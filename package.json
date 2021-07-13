@@ -7,7 +7,7 @@
   ],
   "scripts": {
     "build": "cross-env NODE_ENV=production gulp build & gulp imagemin",
-    "editorconfig": "editorconfig-cli --color",
+    "editorconfig": "editorconfig-cli",
     "imagemin": "gulp imagemin",
     "prepare": "husky install",
     "start": "npm run prepare & cross-env NODE_ENV=development gulp start ",
