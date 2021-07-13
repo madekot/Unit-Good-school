@@ -30,6 +30,8 @@ const validateHtmlBem = () => {
     .pipe(gulpHtmlBemValidator())
 };
 
+const validateHtml = gulp.series(validateHtmlW3c, validateHtmlBem);
+
 const html = () => {
   return gulp.src(['source/html/*.html'])
     .pipe(fileinclude({
@@ -181,5 +183,4 @@ exports.build = build;
 exports.start = start;
 exports.webp = createWebp;
 exports.imagemin = optimizeImages;
-exports.validateHtmlBem = validateHtmlBem;
-exports.validateHtmlW3c = validateHtmlW3c;
+exports.validateHtml = validateHtml;
