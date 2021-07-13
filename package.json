@@ -16,6 +16,7 @@
     "validateHtmltest": "gulp validateHtmlBem --color",
     "webp": "gulp webp"
   },
+  "husky": { "hooks": { "pre-commit": "env FORCE_COLOR=1 npm run test" } },
   "lint-staged": {
     "*.{json,js,html,svg,sass,scss}": "editorconfig-cli",
     "*.scss": "stylelint --syntax scss --color",
