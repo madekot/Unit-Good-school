@@ -1,5 +1,6 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
+export FORCE_COLOR=1
 
 npm run validateHtmltest
-env FORCE_COLOR=1 npx lint-staged
+npx lint-staged
