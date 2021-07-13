@@ -1,19 +1,24 @@
 <section class="product-categories-lists">
   <h2 class="visually-hidden">Товары и услуги</h2>
   <div class="product-categories-lists__item">
-    <div class="product-categories-lists__wrap">
-      @@include('source/html/components/product-categories-item.html')
-    </div>
-    <div class="product-categories-lists__wrap">
-      @@include('source/html/components/product-categories-item.html')
-    </div>
-    <div class="product-categories-lists__wrap">
-      <h3 class="subtitle"><a href="#" class="link">Электроника</a></h3>
-    </div>
+    @@include('source/html/components/product-categories-item.html', {
+      context: {
+        title: 'Электроника'
+      }
+    })
+    @@include('source/html/components/product-categories-item.html', {
+      context: {
+        title: 'Электроника'
+      }
+    })
+    <h3 class="subtitle"><a href="#" class="link">Электроника</a></h3>
+    <h3 class="subtitle"><a href="#" class="link">Электроника</a></h3>
   </div>
   <div class="product-categories-lists__item">
-    <div class="product-categories-lists__wrap">
-      @@include('source/html/components/product-categories-item.html')
-    </div>
+    @@include('source/html/components/product-categories-item.html', {
+      context: {
+        title: 'Электроника'
+      }
+    })
   </div>
 </section>

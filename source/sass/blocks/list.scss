@@ -5,3 +5,7 @@
 
   list-style: none;
 }
+
+.list .product-categories-list-item + .product-categories-list-item {
+  margin-top: 10px;
+}

@@ -215,7 +215,11 @@
         <section>
           <h2>пункт списка категорий продукции</h2>
           <p>product-categories-item</p>
-          @@include('source/html/components/product-categories-item.html')
+          @@include('source/html/components/product-categories-item.html', {
+            context: {
+              title: 'Электроника'
+            }
+          })
         </section>
 
         <!-- Всегда оставляйте коммент ниже, чтобы удобно было копипастить -->

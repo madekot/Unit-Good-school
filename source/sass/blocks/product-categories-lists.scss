@@ -27,10 +27,15 @@
   border-bottom: none;
 }
 
-.product-categories-lists .product-categories-item {
-  padding-bottom: 5px;
+.product-categories-lists .product-categories-lists__item > * {
+  margin-bottom: 20px;
 }
 
-.product-categories-lists__wrap + .product-categories-lists__wrap {
-  margin-top: 20px;
+.product-categories-lists .product-categories-lists__item > :last-child {
+  margin-bottom: 0;
+}
+
+
+.product-categories-item__link {
+  margin-bottom: 5px;
 }
