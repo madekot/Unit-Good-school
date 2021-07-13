@@ -1,4 +1,8 @@
-<form class="form" action="" method="get" name="form-search">
-  @@include('source/html/components/input-field.html')
+<form class="form" action="@@context.action" method="@@context.method" name="@@context.name">
+  @@include('source/html/components/input-field.html', {
+    context: {
+      id: '@@context.idInputField'
+    }
+  })
   @@include('source/html/components/button.html')
 </form>

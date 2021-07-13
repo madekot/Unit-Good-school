@@ -13,10 +13,11 @@
     "start": "npm run prepare & cross-env NODE_ENV=development gulp start ",
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss --color",
     "test": "npm run editorconfig & npm run stylelint & eslint source/js/",
+    "validateHtmltest": "gulp validateHtmlBem --color",
     "webp": "gulp webp"
   },
   "lint-staged": {
-    "*.{json,js,html,svg,sass,scss}": "editorconfig-cli",
+    "*.{json,js,html,svg,sass,scss}": "editorconfig-cli --color",
     "*.scss": "stylelint --syntax scss --color",
     "*.js": "eslint --color"
   },
@@ -35,6 +36,7 @@
     "eslint-config-htmlacademy": "^4.0.2",
     "gulp-html-beautify": "^1.0.1",
     "gulp-html-bem-validator": "^1.0.5",
+    "gulp-w3c-html-validator": "^2.0.1",
     "stylelint": "^13.13.1",
     "stylelint-config-htmlacademy": "^0.1.x"
   },

@@ -17,6 +17,18 @@ const fileinclude = require('gulp-file-include');
 const htmlbeautify = require('gulp-html-beautify');
 const gcmq = require('gulp-group-css-media-queries');
 const gulpHtmlBemValidator = require('gulp-html-bem-validator');
+const htmlValidator = require('gulp-w3c-html-validator');
+
+const validateHtmlW3c = () => {
+  return gulp.src(['build/**/*.html'])
+    .pipe(htmlValidator())  //note: v2.0 does not use analyzer()
+    .pipe(htmlValidator.reporter());
+};
+
+const validateHtmlBem = () => {
+  return gulp.src(['build/**/*.html'])
+    .pipe(gulpHtmlBemValidator())
+};
 
 const html = () => {
   return gulp.src(['source/html/*.html'])
@@ -33,7 +45,6 @@ const html = () => {
       'max_preserve_newlines': 0,
       'wrap_attributes': 'auto',
     }))
-    .pipe(gulpHtmlBemValidator())
     .pipe(gulp.dest('build'));
 };
 
@@ -170,3 +181,4 @@ exports.build = build;
 exports.start = start;
 exports.webp = createWebp;
 exports.imagemin = optimizeImages;
+exports.validateHtmlBem = validateHtmlBem;

@@ -87,14 +87,25 @@
         <section>
           <h2>поле инпута</h2>
           <p>input</p>
-          @@include("source/html/components/input-field.html")
+          @@include("source/html/components/input-field.html", {
+            context: {
+              id: 'hello'
+            }
+          })
         </section>
 
         <!-- Всегда оставляйте коммент ниже, чтобы удобно было копипастить -->
         <section>
           <h2>форма</h2>
           <p>form</p>
-          @@include('source/html/components/form.html')
+          @@include('source/html/components/form.html', {
+            context: {
+              action: '#',
+              method: 'get',
+              name: 'form-search',
+              idInputField: 'helloWorld'
+            }
+          })
         </section>
 
         <!-- Всегда оставляйте коммент ниже, чтобы удобно было копипастить -->
