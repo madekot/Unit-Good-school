@@ -7,7 +7,7 @@
   ],
   "scripts": {
     "build": "cross-env NODE_ENV=production gulp build & gulp imagemin",
-    "editorconfig": "editorconfig-cli",
+    "editorconfig": "editorconfig-cli --color",
     "imagemin": "gulp imagemin",
     "prepare": "husky install",
     "start": "npm run prepare & cross-env NODE_ENV=development gulp start ",
@@ -17,7 +17,7 @@
     "webp": "gulp webp"
   },
   "lint-staged": {
-    "*.{json,js,html,svg,sass,scss}": "editorconfig-cli --color",
+    "*.{json,js,html,svg,sass,scss}": "editorconfig",
     "*.scss": "stylelint --syntax scss --color",
     "*.js": "eslint --color"
   },
@@ -69,3 +69,5 @@
     "webpack-stream": "^6.1.2"
   }
 }
+
+
