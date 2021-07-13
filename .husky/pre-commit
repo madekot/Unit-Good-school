@@ -2,5 +2,5 @@
 . "$(dirname "$0")/_/husky.sh"
 export FORCE_COLOR=1
 
-npm run validateHtmltest
+npm run validateHtml
 npx lint-staged

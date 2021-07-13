@@ -182,3 +182,4 @@ exports.start = start;
 exports.webp = createWebp;
 exports.imagemin = optimizeImages;
 exports.validateHtmlBem = validateHtmlBem;
+exports.validateHtmlW3c = validateHtmlW3c;
