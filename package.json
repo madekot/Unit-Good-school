@@ -17,13 +17,13 @@
     "webp": "gulp webp"
   },
   "lint-staged": {
-    "*.{json,js,html,svg,sass,scss}": "editorconfig-cli",
-    "*.scss": "stylelint --syntax scss --color",
-    "*.js": "eslint --color"
+    "source/*.{json,js,html,svg,sass,scss}": "editorconfig-cli",
+    "source/*.scss": "stylelint --syntax scss --color",
+    "source/*.js": "eslint --color"
   },
   "editorconfig-cli": [
-    "*.json",
-    "*.js",
+    "source/*.json",
+    "source/*.js",
     "source/**/*.html",
     "source/js/**/*.js",
     "source/img/**/*.svg",
