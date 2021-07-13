@@ -1,6 +1,6 @@
-<div class="product-categories-item">
-  <h3 class="subtitle"><a href="#" class="link">@@context.title</a></h3>
-  <div class="product-categories-item__wrap">
+<div class="product-categories-item js-accordion">
+  <h3 class="subtitle js-accordion__button"><a href="#" class="link">@@context.title</a></h3>
+  <div class="product-categories-item__wrap js-accordion__content">
     <ul class="list">
       @@if (context.type == 'electronics') {
         @@loop('source/html/components/product-categories-list-item.html', [
