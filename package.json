@@ -13,7 +13,7 @@
     "start": "npm run prepare & cross-env NODE_ENV=development gulp start ",
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss --color",
     "test": "npm run editorconfig & npm run stylelint & eslint source/js/",
-    "validateHtml": "gulp validateHtmlBem validateHtmlW3c -r",
+    "validateHtml": "gulp validateHtmlBem validateHtmlW3c",
     "webp": "gulp webp"
   },
   "lint-staged": {
