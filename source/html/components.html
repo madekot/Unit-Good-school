@@ -217,9 +217,23 @@
           <p>product-categories-item</p>
           @@include('source/html/components/product-categories-item.html', {
             context: {
-              title: 'Электроника'
+              title: 'Электроника',
+              type: 'electronics'
             }
           })
+        </section>
+
+        <!-- Всегда оставляйте коммент ниже, чтобы удобно было копипастить -->
+        <section>
+          <h2>Категория продукции</h2>
+          <p></p>
+          <ul class="list">
+            @@include('source/html/components/product-categories-list-item.html', {
+              context: {
+                textContent: 'Электроника'
+              }
+            })
+          </ul>
         </section>
 
         <!-- Всегда оставляйте коммент ниже, чтобы удобно было копипастить -->

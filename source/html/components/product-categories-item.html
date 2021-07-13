@@ -1,10 +1,16 @@
 <div class="product-categories-item">
   <h3 class="subtitle"><a href="#" class="link">@@context.title</a></h3>
-  <ul class="list">
-    <li class="product-categories-list-item"><h4 class="subtitle subtitle--size-small"><a class="link" href="#">Смартфоны</a></h4></li>
-    <li class="product-categories-list-item"><h4 class="subtitle subtitle--size-small"><a class="link" href="#">Планшеты</a></h4></li>
-    <li class="product-categories-list-item"><h4 class="subtitle subtitle--size-small"><a class="link" href="#">Наушники</a></h4></li>
-    <li class="product-categories-list-item"><h4 class="subtitle subtitle--size-small"><a class="link" href="#">Смарт-часы</a></h4></li>
-  </ul>
-  <a href="#" class="link link--color">Показать все</a>
+  <div class="product-categories-item__wrap">
+    <ul class="list">
+      @@if (context.type == 'electronics') {
+        @@loop('source/html/components/product-categories-list-item.html', [
+          { "context": {"textContent": "Смартфоны"}, },
+          { "context": {"textContent": "Планшеты"}, },
+          { "context": {"textContent": "Наушники"}, },
+          { "context": {"textContent": "Смарт-часы"} }
+        ])
+      }
+    </ul>
+    <a href="#" class="product-categories-item__link link link--color">Показать все</a>
+  </div>
 </div>

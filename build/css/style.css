@@ -1824,7 +1824,7 @@ button,
   margin-bottom: 0;
 }
 
-.product-categories-item__link {
+.product-categories-lists .product-categories-item__link {
   margin-bottom: 5px;
 }
 
@@ -1853,15 +1853,14 @@ button,
   line-height: 17px;
 }
 
-.product-categories-item > .link {
-  display: inline-block;
+.product-categories-item__wrap {
   margin-top: 15px;
   margin-left: 20px;
 }
 
-.product-categories-item > .list {
+.product-categories-item__link {
+  display: inline-block;
   margin-top: 15px;
-  margin-left: 20px;
 }
 
 /* @media (hover: hover), screen and (min-width: 0\0) {

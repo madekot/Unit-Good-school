@@ -1,10 +1,10 @@
-.product-categories-item > .link {
-  display: inline-block;
+
+.product-categories-item__wrap {
   margin-top: 15px;
   margin-left: 20px;
 }
 
-.product-categories-item > .list {
+.product-categories-item__link {
+  display: inline-block;
   margin-top: 15px;
-  margin-left: 20px;
 }
