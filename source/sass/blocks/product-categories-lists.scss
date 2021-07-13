@@ -9,6 +9,8 @@
 }
 
 .product-categories-lists__item {
+  display: flex;
+  flex-direction: column;
   padding-right: 40px;
   padding-bottom: 20px;
   padding-left: 40px;
@@ -35,6 +37,6 @@
   margin-bottom: 0;
 }
 
-.product-categories-lists .product-categories-item__link {
+.product-categories-lists .product-categories-item__wrap {
   margin-bottom: 5px;
 }

@@ -1799,6 +1799,13 @@ button,
 }
 
 .product-categories-lists__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
   padding-right: 40px;
   padding-bottom: 20px;
   padding-left: 40px;
@@ -1824,7 +1831,7 @@ button,
   margin-bottom: 0;
 }
 
-.product-categories-lists .product-categories-item__link {
+.product-categories-lists .product-categories-item__wrap {
   margin-bottom: 5px;
 }
 
@@ -1858,7 +1865,7 @@ button,
   margin-left: 20px;
 }
 
-.product-categories-item__link {
+.product-categories-item__wrap > .link {
   display: inline-block;
   margin-top: 15px;
 }
