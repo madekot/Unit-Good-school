@@ -16,6 +16,7 @@ const webpackConfig = require('./webpack.config.js');
 const fileinclude = require('gulp-file-include');
 const htmlbeautify = require('gulp-html-beautify');
 const gcmq = require('gulp-group-css-media-queries');
+const gulpHtmlBemValidator = require('gulp-html-bem-validator');
 
 const html = () => {
   return gulp.src(['source/html/*.html'])
@@ -32,6 +33,7 @@ const html = () => {
       'max_preserve_newlines': 0,
       'wrap_attributes': 'auto',
     }))
+    .pipe(gulpHtmlBemValidator())
     .pipe(gulp.dest('build'));
 };
 
