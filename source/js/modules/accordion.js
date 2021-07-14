@@ -30,11 +30,19 @@ const accordion = () => {
         contentElement.style.marginTop = size.marginTop;
       };
 
-      if (content.classList.contains('js-accordion__content--close')) {
+      const isContentClose = () => {
+        return content.classList.contains('js-accordion__content--close');
+      };
+
+      const isContentMoreClose = () => {
+        return contentMore.classList.contains('js-accordion__content-more--close');
+      };
+
+      if (isContentClose()) {
         resetSizeContent(content);
       }
 
-      if (contentMore.classList.contains('js-accordion__content-more--close')) {
+      if (isContentMoreClose()) {
         resetSizeContent(contentMore);
       }
 
@@ -61,7 +69,7 @@ const accordion = () => {
       if (buttonShowMore) {
         buttonShowMore.addEventListener('click', (evt) => {
           evt.preventDefault();
-          if (contentMore.classList.contains('js-accordion__content-more--close')) {
+          if (isContentMoreClose()) {
             openSecondContent();
             setSizeContent(content, mainContentSize, getContentSize(contentMore).contentHeight);
             setSizeContent(contentMore, secondContentSize);
@@ -78,7 +86,7 @@ const accordion = () => {
       buttonList.forEach((button)=> {
         button.addEventListener('click', (evt) => {
           evt.preventDefault();
-          if (content.classList.contains('js-accordion__content--close')) {
+          if (isContentClose()) {
             if (contentMore.classList.contains('js-accordion__content-more--open')) {
               setSizeContent(content, mainContentSize, getContentSize(contentMore).contentHeight);
             } else {
