@@ -23,11 +23,11 @@
 
   @include non-touch {
     &--color:hover {
-      color: #000c22;
+      color: darken(rgb(159, 132, 243), 15%);
     }
 
     &--color:focus {
-      color: #000c22;
+      color: darken(rgb(159, 132, 243), 15%);
     }
   }
 }

@@ -1,15 +1,28 @@
 <div class="product-categories-group js-accordion">
   <h3 class="subtitle js-accordion__button"><a href="#" class="link">@@context.title</a></h3>
   <div class="product-categories-group__wrap js-accordion__content js-accordion__content--close">
-    @@for (var i = 0; i < context.arr.length; i++) {
-      <div class="product-categories-group__first-part">
-        <h4 class="subtitle subtitle--size-small">
-          <a class="link" href="#">
-            `+context.arr[i]+`
-          </a>
-        </h4>
-      </div>
-    }
-    <a href="#" class="link link--color">Показать все</a>
+    <div class="product-categories-group__show-items">
+      @@for (var i = 0; i < context.arr.length; i++) {
+        `+(i < (context.itemShown) ?
+          `<h4 class="subtitle subtitle--size-small">
+            <a class="link" href="#">
+              `+context.arr[i]+`
+            </a>
+          </h4>` :``
+        )+`
+      }
+    </div>
+    <div class="product-categories-group__hidden-items js-accordion__content-more js-accordion__content-more--close">
+      @@for (var i = 0; i < context.arr.length; i++) {
+        `+(i >= (context.itemShown) ?
+          `<h4 class="subtitle subtitle--size-small">
+            <a class="link" href="#">
+              `+context.arr[i]+`
+            </a>
+          </h4>` :``
+        )+`
+      }
+    </div>
+    <a href="#" class="link link--color js-accordion__button-show-more" data-title-open="Показать все" data-title-close="Свернуть">Показать все</a>
   </div>
 </div>

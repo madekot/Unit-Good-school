@@ -8,3 +8,16 @@
   display: inline-block;
   margin-top: 15px;
 }
+
+.product-categories-group__hidden-items {
+  height: 0;
+  margin-top: 10px;
+}
+
+.product-categories-group__show-items .subtitle + .subtitle {
+  margin-top: 10px;
+}
+
+.product-categories-group__hidden-items .subtitle + .subtitle {
+  margin-top: 10px;
+}
