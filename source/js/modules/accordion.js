@@ -1,6 +1,6 @@
 const accordion = () => {
   const accordionElement = document.querySelector('.js-accordion');
-  if (accordion) {
+  if (accordionElement) {
     const button = accordionElement.querySelector('.js-accordion__button');
     const content = accordionElement.querySelector('.js-accordion__content');
 

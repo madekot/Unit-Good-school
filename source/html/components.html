@@ -218,22 +218,10 @@
           @@include('source/html/components/product-categories-group.html', {
             context: {
               title: 'Электроника',
-              type: 'electronics'
+              type: 'electronics',
+              arr: ['Смартфоны', 'Планшеты', 'Наушники', 'Смарт-часы']
             }
           })
-        </section>
-
-        <!-- Всегда оставляйте коммент ниже, чтобы удобно было копипастить -->
-        <section>
-          <h2>Категория продукции</h2>
-          <p></p>
-          <ul class="list">
-            @@include('source/html/components/product-categories-list-item.html', {
-              context: {
-                textContent: 'Электроника'
-              }
-            })
-          </ul>
         </section>
 
         <!-- Всегда оставляйте коммент ниже, чтобы удобно было копипастить -->
