@@ -91,6 +91,8 @@ const accordion = () => {
           }
         });
       });
+
+      buttonShowMore.textContent = buttonShowMore.dataset.titleOpen;
     }
   };
 
